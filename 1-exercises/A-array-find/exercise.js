@@ -19,7 +19,8 @@ var names = [
 
  function findLongNameThatStartsWithA(name){
    
-   return (name.length > 7 && name.startsWith('A'));
+   return (name.length > 7 && name[0] === "A");
+  // return (name.length > 7 && name.startsWith('A'));
  }
 
 var longNameThatStartsWithA = names.find(findLongNameThatStartsWithA);
