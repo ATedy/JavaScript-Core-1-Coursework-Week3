@@ -13,6 +13,8 @@
 let story =
   "I like dogs. One day I went to the park and I saw 10 dogs. It was a great day.";
 
+  // generic way of replacing, /g, it will change all the strings in the text, case-insensitive.
+
 var result = story.replace(/dogs/g,"cats").replace(/day/g,"night").replace(/10/g,"100000").replace(/great/g, "brilliant");
 
 /* EXPECTED OUTPUT */
