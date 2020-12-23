@@ -11,7 +11,11 @@
     Some string methods that might help you here are .replace() and .substring(). 
 */
 
-function safeLevels() {}
+function safeLevels(oxygenLevels) {
+// let num =oxygenLevel.substring(1, oxygenLevel.length - 1);
+  let oxygenLevel  = oxygenLevels.find( num => parseFloat(num) > 19.5 && parseFloat(num) < 23.5);
+  return oxygenLevel;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
