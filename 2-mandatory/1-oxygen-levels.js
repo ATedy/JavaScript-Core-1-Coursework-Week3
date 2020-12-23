@@ -13,6 +13,7 @@
 
 function safeLevels(oxygenLevels) {
 // let num =oxygenLevel.substring(1, oxygenLevel.length - 1);
+// parseInt & parsFloat 
   let oxygenLevel  = oxygenLevels.find( num => parseFloat(num) > 19.5 && parseFloat(num) < 23.5);
   return oxygenLevel;
 }

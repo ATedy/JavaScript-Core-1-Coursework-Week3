@@ -15,7 +15,10 @@
   
 */
 
-function colonisers() {}
+function colonisers(voyager) {
+  let settled = voyager.filter( name => name.startsWith("A") && name.includes("family"))
+  return settled;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
