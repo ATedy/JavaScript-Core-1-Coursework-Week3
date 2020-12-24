@@ -98,7 +98,10 @@ function isAccessibleByTransportMode(modeOfTrans, mode) {
    - Returns the name of the location
       e.g: "Tower Bridge"
 */
-function getLocationName() {}
+function getLocationName(arr) {
+  const arr1 = arr[0];
+  return arr1;
+}
 
 /*
  We arrived at the final method. it won't take long if you use the previously implemented functions wisely.
