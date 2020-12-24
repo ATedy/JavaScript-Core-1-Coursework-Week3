@@ -40,6 +40,7 @@ function checkCodeIsThere(stringText) {
     the 1st element says the name of the location,
     and rest of them says the transport modes.
 
+    
   You will then get a list of these information, e.g:
   [
     ["Tower Bridge", "tube", "river boat"],
@@ -86,6 +87,7 @@ function getTransportModes(arr) {
   Hint: Use the corresponding array method to decide if an element is member of an array.
 */
 function isAccessibleByTransportMode(modeOfTrans, mode) {
+  
   return modeOfTrans.hasOwnProperty(mode);
 }
 
@@ -131,6 +133,16 @@ function getLocationName(arr) {
   Advanced challange: try to use arrow function when invoking an array method.
 */
 function journeyPlanner(locations, transportMode) {
+  // filter the locations accessible by transportMode
+  // The filtered location name only will be mapped using the getLocation func.
+  // const accessibleLocation = locations.filter(location => location.includes(transportMode))
+  // const accessibleLocation1 = accessibleLocation.map(getLocationName);
+  // return accessibleLocation1;
+
+  // const accessibleLocation = locations.filter(isAccessibleByTransportMode).map(getLocationName);
+
+   const accessibleLocation = locations.filter(location => location.includes(transportMode)).map(getLocationName);
+   return accessibleLocation;
   // Implement the function body
 }
 
