@@ -6,7 +6,11 @@
   HINT: string and array methods that could be helpful (indexOf, filter)
 */
 
-function getLanes() {}
+function getLanes(arr) {
+  // .search returns -1, if nothing found.
+  let laneStreet = arr.filter(lanes => lanes.search("Lane") >=0)
+  return laneStreet;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
