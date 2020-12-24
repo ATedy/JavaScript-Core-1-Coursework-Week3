@@ -4,7 +4,7 @@
   - For the multiples of 5 print “Buzz”. 
   - For numbers which are multiples of both 3 and 5 print “FizzBuzz”
 
-  An array with numbers 1-15 has been provided.
+  An array with numbers 1-15 has been provided. Mandatory
 */
 
 var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];

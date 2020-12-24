@@ -17,6 +17,8 @@ let story =
 
 var result = story.replace(/dogs/g,"cats").replace(/day/g,"night").replace(/10/g,"100000").replace(/great/g, "brilliant");
 
+//replaced story with result in test
+
 /* EXPECTED OUTPUT */
 
 const util = require("util");
