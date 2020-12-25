@@ -38,11 +38,8 @@ function validatePasswords(passwords) {
   let myRegExp = /(?=.*[A-Za-b])(?=.*[0-9])(?=.*[!#\$%\^&\*])(?=.{5,})/;
   let validPassword = passwords.map((password,position) =>{
      return myRegExp.test(password) && passwords.indexOf(password) === position;
-  
   })
-
-  
-  return validPassword;
+     return validPassword;
 
 }
 
