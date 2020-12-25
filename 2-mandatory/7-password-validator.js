@@ -23,8 +23,25 @@ PasswordValidationResult=  [false, false, false, false, true]
 */
 
 function validatePasswords(passwords) {
-  let validPassword;
-  // let password = passwords.RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
+  // let reg1 = /[A-Za-b]/;
+  // let reg2 = /([A-Z])\w+/g;
+  // let reg3 = /[0-9]/;
+  // let reg4 = /./g;
+ // let myRegExp = /[A-Za-b][0-9]/;
+ // let password = passwords.RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
+ 
+ /* for duplicated password
+   let validPassword = passwords.map(password => myRegExp.test(password)
+*/
+
+ 
+  let myRegExp = /(?=.*[A-Za-b])(?=.*[0-9])(?=.*[!#\$%\^&\*])(?=.{5,})/;
+  let validPassword = passwords.map((password,position) =>{
+     return myRegExp.test(password) && passwords.indexOf(password) === position;
+  
+  })
+
+  
   return validPassword;
 
 }
