@@ -9,7 +9,7 @@
 
 function eligibleStudents(arr) {
   let allowedToSitStudent = arr.filter(student => student[1] >= 8)
-  let listOfStudent = allowedToSitStudent.map(item => item = item[0])
+  let listOfStudent = allowedToSitStudent.map(student => student = student[0])
    return listOfStudent;
 
 }
